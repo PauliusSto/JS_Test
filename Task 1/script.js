@@ -8,3 +8,15 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+const buttonCalculate = document.getElementById('submit-btn');
+
+buttonCalculate.addEventListener('click', (event) => {
+    event.preventDefault();
+    let weight = document.getElementById('search').value
+
+    if (weight === "" || isNaN(weight)) {
+        output.innerHTML = "Please provide valid weight in kilograms and click Calculate again";
+    } else {
+    output.innerHTML = `Pounds: ${weight * 2.2046} | Grams: ${weight / 0.0010000} | Ounces: ${weight * 35.274}`
+}
+});
