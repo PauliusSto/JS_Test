@@ -19,3 +19,15 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+// 2. 
+
+function getUsersNames(users) {
+  const newList = [];
+  users.forEach((result) => {
+        newList.push(result.name);
+  });
+  return newList;
+};
+
+console.log(getUsersNames(users));

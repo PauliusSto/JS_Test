@@ -38,6 +38,14 @@ form {
   font-size: 1.1em;
 }
 
+#output {
+  padding: 20px;
+  outline: 0;
+  border: 0;
+  font-size: 1.1em;
+  text-align: center;
+}
+
 #submit-btn {
   width: 35%;
   background-color: #f7f7f7;
@@ -61,5 +69,10 @@ form {
   #search,
   #submit-btn {
     font-size: 2em;
+  }
+
+  #output {
+    font-size: 2em;
+
   }
 }
